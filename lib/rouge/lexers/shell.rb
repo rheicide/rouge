@@ -31,7 +31,8 @@ module Rouge
         ulimit umask unalias unset wait
         apt-get apt cp mv rm touch git nano pip vi wget curl free
         fallocate chmod mkswap swapon swapoff top chown mkdir apk
-        groupadd useradd adduser service sudo su
+        groupadd useradd adduser service sudo su unzip tar tr rename
+        add-apt-repository
       ).join('|')
 
       state :basic do
