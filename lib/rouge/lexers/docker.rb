@@ -12,6 +12,7 @@ module Rouge
 
       KEYWORDS = %w(
         FROM MAINTAINER CMD EXPOSE ENV ADD ENTRYPOINT VOLUME WORKDIR
+        LABEL COPY USER ARG STOPSIGNAL HEALTHCHECK SHELL
       ).join('|')
 
       start { @shell = Shell.new(@options) }
