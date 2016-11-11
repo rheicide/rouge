@@ -32,7 +32,7 @@ module Rouge
         apt-get apt cp mv rm touch git nano pip vi wget curl free
         fallocate chmod mkswap swapon swapoff top chown mkdir apk
         groupadd useradd adduser service sudo su unzip tar tr rename
-        add-apt-repository
+        add-apt-repository python ruby gem bundle rake npm node
       ).join('|')
 
       state :basic do
