@@ -20,6 +20,7 @@ module Rouge
       KEYWORDS = %w(
         if fi else while do done for then return function
         select continue until esac elif in
+        sudo
       ).join('|')
 
       BUILTINS = %w(
@@ -29,6 +30,8 @@ module Rouge
         local logout popd printf pushd pwd read readonly set shift
         shopt source suspend test time times trap true type typeset
         ulimit umask unalias unset wait
+        apt-get apt cp mv rm touch git nano pip vi wget curl free
+        fallocate chmod mkswap swapon swapoff top
       ).join('|')
 
       state :basic do
