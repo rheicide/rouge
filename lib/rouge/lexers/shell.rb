@@ -33,7 +33,8 @@ module Rouge
         fallocate chmod mkswap swapon swapoff top chown mkdir apk
         groupadd useradd adduser service sudo su unzip tar tr rename
         add-apt-repository python ruby gem bundle rake npm node
-        docker date
+        docker-compose docker date fold head tail service systemctl
+        sh fc-cache cat ssh-keygen mvn java jar strings grep find
       ).join('|')
 
       state :basic do
